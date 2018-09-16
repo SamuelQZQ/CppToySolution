@@ -27,6 +27,9 @@
 		7373284B214E26E500EB7521 /* BinaryIndexTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryIndexTree.h; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
 		73732850214E29EC00EB7521 /* BinaryIndexTreeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryIndexTreeTest.h; sourceTree = "<group>"; };
+		73732852214E2B4E00EB7521 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		73732853214E2B9D00EB7521 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
+		73732855214E2BD300EB7521 /* SortTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTest.h; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,9 +55,20 @@
 			path = BinaryIndex;
 			sourceTree = "<group>";
 		};
+		73732851214E2B3900EB7521 /* SortAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				73732852214E2B4E00EB7521 /* QuickSort.h */,
+				73732853214E2B9D00EB7521 /* HeapSort.h */,
+				73732855214E2BD300EB7521 /* SortTest.h */,
+			);
+			path = SortAlgorithm;
+			sourceTree = "<group>";
+		};
 		73C0AF89214E21F70096AB22 = {
 			isa = PBXGroup;
 			children = (
+				73732851214E2B3900EB7521 /* SortAlgorithm */,
 				7373284E214E298D00EB7521 /* BinaryIndex */,
 				73C0AF94214E21F70096AB22 /* CppToySolution */,
 				73C0AF93214E21F70096AB22 /* Products */,

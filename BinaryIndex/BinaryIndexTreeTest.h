@@ -9,6 +9,7 @@
 #ifndef BinaryIndexTreeTest_h
 #define BinaryIndexTreeTest_h
 #include "BinaryIndexTree.h"
+#include <iostream>
 
 static void Test()
 {

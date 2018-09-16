@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "BinaryIndexTreeTest.h"
+#include "SortTest.h"
 
 using namespace std;
 
