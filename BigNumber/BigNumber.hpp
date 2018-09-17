@@ -25,8 +25,8 @@ public:
     bool operator > (const BigNumber &y) const;
     bool operator < (const BigNumber &y) const;
     BigNumber operator + (const BigNumber &y) const;
-//    BigNumber operator - (BigNumber y);
-//    BigNumber operator * (BigNumber y);
+    BigNumber operator - (const BigNumber &y) const;
+    BigNumber operator * (const BigNumber &y) const;
 //    BigNumber operator / (BigNumber y);
     friend std::ostream &operator << (std::ostream &out, const BigNumber &x);
     

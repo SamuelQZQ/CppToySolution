@@ -24,5 +24,11 @@ int main(int argc, const char * argv[]) {
     cout<<BigNumber(1234567) + BigNumber(-11234567)<<endl;
     cout<<BigNumber(-1234567) + BigNumber(-11234567)<<endl;
     cout<<BigNumber(1234567) + BigNumber(11234567)<<endl;
+    
+    cout<<"***Test for multiply***"<<endl;
+    cout<<BigNumber(100) * BigNumber(2)<<endl;
+    cout<<BigNumber(-122) * BigNumber(-200)<<endl;
+    cout<<BigNumber(100) * BigNumber(-100)<<endl;
+    cout<<BigNumber(1001) * BigNumber(900)<<endl;
     return 0;
 }

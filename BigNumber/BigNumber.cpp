@@ -70,8 +70,8 @@ bool BigNumber::operator < (const BigNumber &y) const
 
 BigNumber BigNumber::operator + (const BigNumber &y) const
 {
-    const BigNumber * pa = *this > y ? this : &y;
-    const BigNumber * pb = *this > y ? &y : this;
+    const BigNumber *pa = this;
+    const BigNumber *pb = &y;
     
     int remain = 0;
     BigNumber ret;
@@ -85,6 +85,43 @@ BigNumber BigNumber::operator + (const BigNumber &y) const
     return ret;
 }
 
+BigNumber BigNumber::operator - (const BigNumber &y) const
+{
+    const BigNumber *pa = this;
+    const BigNumber *pb = &y;
+    
+    int remain = 0;
+    BigNumber ret;
+    for(int i = 0; i < DIGITNUMBER; ++i)
+    {
+        ret.digit[i] = pa->digit[i] - pb->digit[i] + remain;
+        remain = ret.digit[i] / BASE;
+        ret.digit[i] %= BASE;
+    }
+    ret.AdjustDigit();
+    return ret;
+}
+
+BigNumber BigNumber::operator * (const BigNumber &y) const
+{
+    const BigNumber *pa = this;
+    const BigNumber *pb = &y;
+    
+    int remain = 0;
+    BigNumber ret;
+    for(int i = 0; i < DIGITNUMBER; ++i)
+    {
+        remain = 0;
+        for(int j = 0; j < DIGITNUMBER && i+j < DIGITNUMBER; ++j)
+        {
+            ret.digit[i+j] += pa->digit[i] * pb->digit[j] + remain;
+            remain = ret.digit[i+j] / BASE;
+            ret.digit[i+j] %= BASE;
+        }
+    }
+    ret.AdjustDigit();
+    return ret;
+}
 
 void BigNumber::AdjustDigit()
 {
