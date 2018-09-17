@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7373284C214E272100EB7521 /* BinaryIndexTree.cpp */; };
+		73732859214F962F00EB7521 /* BigNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73732857214F962F00EB7521 /* BigNumber.cpp */; };
 		73C0AF96214E21F70096AB22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73C0AF95214E21F70096AB22 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		73732852214E2B4E00EB7521 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		73732853214E2B9D00EB7521 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
 		73732855214E2BD300EB7521 /* SortTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTest.h; sourceTree = "<group>"; };
+		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
+		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,9 +68,19 @@
 			path = SortAlgorithm;
 			sourceTree = "<group>";
 		};
+		73732856214F961100EB7521 /* BigNumber */ = {
+			isa = PBXGroup;
+			children = (
+				73732857214F962F00EB7521 /* BigNumber.cpp */,
+				73732858214F962F00EB7521 /* BigNumber.hpp */,
+			);
+			path = BigNumber;
+			sourceTree = "<group>";
+		};
 		73C0AF89214E21F70096AB22 = {
 			isa = PBXGroup;
 			children = (
+				73732856214F961100EB7521 /* BigNumber */,
 				73732851214E2B3900EB7521 /* SortAlgorithm */,
 				7373284E214E298D00EB7521 /* BinaryIndex */,
 				73C0AF94214E21F70096AB22 /* CppToySolution */,
@@ -149,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C0AF96214E21F70096AB22 /* main.cpp in Sources */,
+				73732859214F962F00EB7521 /* BigNumber.cpp in Sources */,
 				7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
