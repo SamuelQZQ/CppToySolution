@@ -25,12 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7373284B214E26E500EB7521 /* BinaryIndexTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryIndexTree.h; sourceTree = "<group>"; };
+		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
+		7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTree.hpp; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
-		73732850214E29EC00EB7521 /* BinaryIndexTreeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryIndexTreeTest.h; sourceTree = "<group>"; };
-		73732852214E2B4E00EB7521 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
-		73732853214E2B9D00EB7521 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
-		73732855214E2BD300EB7521 /* SortTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTest.h; sourceTree = "<group>"; };
+		73732850214E29EC00EB7521 /* BinaryIndexTreeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTreeTest.hpp; sourceTree = "<group>"; };
+		73732852214E2B4E00EB7521 /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
+		73732853214E2B9D00EB7521 /* HeapSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HeapSort.hpp; sourceTree = "<group>"; };
+		73732855214E2BD300EB7521 /* SortTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortTest.hpp; sourceTree = "<group>"; };
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,12 +49,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735A7A43214FEC9C001E5761 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7373284E214E298D00EB7521 /* BinaryIndex */,
+				73732851214E2B3900EB7521 /* SortAlgorithm */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		735A7A44214FECBF001E5761 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		735A7A45214FECC9001E5761 /* String */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		735A7A46214FECD6001E5761 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				73732856214F961100EB7521 /* BigNumber */,
+				735A7A44214FECBF001E5761 /* Matrix */,
+				735A7A45214FECC9001E5761 /* String */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		7373284E214E298D00EB7521 /* BinaryIndex */ = {
 			isa = PBXGroup;
 			children = (
 				7373284C214E272100EB7521 /* BinaryIndexTree.cpp */,
-				7373284B214E26E500EB7521 /* BinaryIndexTree.h */,
-				73732850214E29EC00EB7521 /* BinaryIndexTreeTest.h */,
+				7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */,
+				73732850214E29EC00EB7521 /* BinaryIndexTreeTest.hpp */,
 			);
 			path = BinaryIndex;
 			sourceTree = "<group>";
@@ -61,9 +95,9 @@
 		73732851214E2B3900EB7521 /* SortAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				73732852214E2B4E00EB7521 /* QuickSort.h */,
-				73732853214E2B9D00EB7521 /* HeapSort.h */,
-				73732855214E2BD300EB7521 /* SortTest.h */,
+				73732852214E2B4E00EB7521 /* QuickSort.hpp */,
+				73732853214E2B9D00EB7521 /* HeapSort.hpp */,
+				73732855214E2BD300EB7521 /* SortTest.hpp */,
 			);
 			path = SortAlgorithm;
 			sourceTree = "<group>";
@@ -73,6 +107,7 @@
 			children = (
 				73732857214F962F00EB7521 /* BigNumber.cpp */,
 				73732858214F962F00EB7521 /* BigNumber.hpp */,
+				735A7A47214FED12001E5761 /* BigNumberTest.hpp */,
 			);
 			path = BigNumber;
 			sourceTree = "<group>";
@@ -80,9 +115,8 @@
 		73C0AF89214E21F70096AB22 = {
 			isa = PBXGroup;
 			children = (
-				73732856214F961100EB7521 /* BigNumber */,
-				73732851214E2B3900EB7521 /* SortAlgorithm */,
-				7373284E214E298D00EB7521 /* BinaryIndex */,
+				735A7A46214FECD6001E5761 /* Utility */,
+				735A7A43214FEC9C001E5761 /* Algorithm */,
 				73C0AF94214E21F70096AB22 /* CppToySolution */,
 				73C0AF93214E21F70096AB22 /* Products */,
 			);

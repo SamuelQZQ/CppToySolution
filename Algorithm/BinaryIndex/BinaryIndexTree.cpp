@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "BinaryIndexTree.h"
+#include "BinaryIndexTree.hpp"
 
 BinaryIndexTree::BinaryIndexTree(int maxN)
 {
