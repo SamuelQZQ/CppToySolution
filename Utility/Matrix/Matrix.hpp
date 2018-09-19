@@ -8,8 +8,9 @@
 
 #ifndef Matrix_hpp
 #define Matrix_hpp
-#include <stdio.h>
+#include <iostream>
 #include <assert.h>
+
 template<class T>
 class Matrix
 {
@@ -18,8 +19,24 @@ public:
     Matrix(const Matrix &rhs);
     ~Matrix();
     
-    Matrix<T> operator * (const Matrix &y);
+    void Identity();
+    Matrix<T> operator * (const Matrix &y) const;
     Matrix<T>& operator = (const Matrix &y);
+    Matrix<T> operator ^ (int pow) const;
+    friend std::ostream & operator << (std::ostream &out, const Matrix<T> &mat)
+    {
+        for(int i = 0; i < mat.n; ++i)
+        {
+            for(int j = 0; j < mat.m; ++j)
+                out<<mat.val[i][j]<<", ";
+            out<<std::endl;
+        }
+        return out;
+    }
+    
+private:
+    void Release();
+    
 public:
     int n, m;
     T **val;
@@ -47,29 +64,40 @@ Matrix<T>::Matrix(const Matrix<T> &rhs):n(rhs.n), m(rhs.m)
 }
 
 template<class T>
-Matrix<T>& Matrix<T>::operator = (const Matrix<T> &rhs)
+Matrix<T>& Matrix<T>::operator = (const Matrix<T> &y)
 {
-    if(&rhs == this) return;
-    // release old memory
-    // get new memory
-    // do it
+    const Matrix<T> *rhs = &y;
+    if(rhs == this) return *this;
+    
+    Release();
+    n = rhs->n;
+    m = rhs->m;
     
     val = new int*[n];
     for(int i = 0; i < n; ++i) val[i] = new int[m];
     
     for(int i = 0; i < n; ++i)
-        for(int j = 0; j < m; ++j) val[i][j] = rhs.val[i][j];
+        for(int j = 0; j < m; ++j) val[i][j] = rhs->val[i][j];
+    
+    return *this;
 }
 
 template<class T>
 Matrix<T>::~Matrix()
 {
-    for(int i = 0; i < n; ++i) delete [] val[i];
-    delete [] val;
+    Release();
 }
 
 template<class T>
-Matrix<T> Matrix<T>::operator * (const Matrix &y)
+void Matrix<T>::Identity()
+{
+    assert(this->n == this->m);
+    for(int i = 0; i < n; ++i)
+        for(int j = 0; j < m; ++j) val[i][j] = i==j ? 1 : 0;
+}
+
+template<class T>
+Matrix<T> Matrix<T>::operator * (const Matrix &y) const
 {
     const Matrix<T> *rhs = &y;
     assert(this->m == rhs->n);
@@ -81,6 +109,30 @@ Matrix<T> Matrix<T>::operator * (const Matrix &y)
                 ret.val[i][j] += this->val[i][k] * rhs->val[k][j];
     
     return ret;
+}
+
+template<class T>
+Matrix<T> Matrix<T>::operator ^ (int pow) const
+{
+    assert(this->n == this->m);
+    Matrix<T> ret(this->n, this->m), temp(*this);
+    ret.Identity();
+    
+    while(pow)
+    {
+        if(pow & 1) ret = ret * temp;
+        temp = temp * temp;
+        pow >>= 1;
+    }
+    
+    return ret;
+}
+
+template<class T>
+void Matrix<T>::Release()
+{
+    for(int i = 0; i < n; ++i) delete [] val[i];
+    delete [] val;
 }
 
 #endif /* Matrix_hpp */

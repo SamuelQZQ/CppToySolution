@@ -13,14 +13,18 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    Matrix<int> A(2,3);
-    A.val[0][0] = 1; A.val[0][1] = 1; A.val[0][2] = 1;
-    A.val[1][0] = 1; A.val[1][1] = 1; A.val[1][2] = 1;
+    Matrix<int> A(2,2);
+    A.val[0][0] = 1; A.val[0][1] = 1;
+    A.val[1][0] = 2; A.val[1][1] = 1;
     
     Matrix<int> B(3,2);
     B.val[0][0] = 2; B.val[0][1] = 1;
     B.val[1][0] = 1; B.val[1][1] = 1;
     B.val[2][0] = 2; B.val[2][1] = 2;
-    A*B;
+    Matrix<int> C = A^3;
+    
+    cout<<(A^2)<<endl;
+    
+    cout<<(A^3)<<endl;
     return 0;
 }
