@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		73106FBC215291C40027906C /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		73106FBE2152A6AE0027906C /* MatrixTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MatrixTest.hpp; sourceTree = "<group>"; };
 		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
 		7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTree.hpp; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				73106FBC215291C40027906C /* Matrix.hpp */,
+				73106FBE2152A6AE0027906C /* MatrixTest.hpp */,
 			);
 			path = Matrix;
 			sourceTree = "<group>";
