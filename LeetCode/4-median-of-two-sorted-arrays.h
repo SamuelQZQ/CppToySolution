@@ -11,6 +11,23 @@
 // 1. O(log(max(n,m))) solution
 class Solution {
 public:
+    bool IsBigger(vector<int>& v1, int ind1, vector<int>& v2, int ind2) {
+        if(ind1 >= static_cast<long long>(v1.size())) {
+            if(ind2 < static_cast<long long>(v2.size())) return true;
+            else return false;
+        }
+        else if(ind1 < 0) {
+            return false;
+        }
+        else if(ind2 >= static_cast<long long>(v2.size())) {
+            return false;
+        }
+        else if(ind2 < 0) {
+            return true;
+        }
+        else return v1[ind1] > v2[ind2];
+    }
+    
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         vector<int>& vecA = nums1.size() < nums2.size() ? nums1 : nums2;
         vector<int>& vecB = nums1.size() < nums2.size() ? nums2 : nums1;
@@ -23,16 +40,16 @@ public:
         {
             int posA = (l+r) / 2; // [0, lenA]
             int posB = leftNumber - posA; // [0, lenB]
-            if(posA < lenA && posB-1 >= 0 && vecA[posA] < vecB[posB-1]) l = posA+1;
-            else if(posB < lenB && posA-1 >= 0 && vecB[posB] < vecA[posA-1]) r = posA-1;
+            if(IsBigger(vecB, posB-1, vecA, posA)) l = posA+1;
+            else if(IsBigger(vecA, posA-1, vecB, posB)) r = posA-1;
             else
             {
-                if(posA-1 >= 0 &&  (posB-1 < 0 || vecA[posA-1] > vecB[posB-1])) ans += vecA[posA-1];
+                if(IsBigger(vecA, posA-1, vecB, posB-1)) ans += vecA[posA-1];
                 else ans += vecB[posB-1];
                 
                 if((lenA+lenB) % 2 == 0)
                 {
-                    if(posA < lenA && ( posB == lenB || vecA[posA] < vecB[posB])) ans += vecA[posA];
+                    if(IsBigger(vecB, posB, vecA, posA)) ans += vecA[posA];
                     else ans += vecB[posB];
                     ans /= 2;
                 }
