@@ -38,6 +38,7 @@
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
 		7398A66B215662E3005351D7 /* 2-add-two-numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2-add-two-numbers.h"; sourceTree = "<group>"; };
 		7398A66C21566E6A005351D7 /* 3-longest-substring-without-repeating-characters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3-longest-substring-without-repeating-characters.h"; sourceTree = "<group>"; };
+		7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4-median-of-two-sorted-arrays.h"; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +124,7 @@
 			children = (
 				7398A66B215662E3005351D7 /* 2-add-two-numbers.h */,
 				7398A66C21566E6A005351D7 /* 3-longest-substring-without-repeating-characters.h */,
+				7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
