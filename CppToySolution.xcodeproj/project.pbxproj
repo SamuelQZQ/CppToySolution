@@ -36,6 +36,7 @@
 		73732855214E2BD300EB7521 /* SortTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortTest.hpp; sourceTree = "<group>"; };
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
+		7398A66B215662E3005351D7 /* 2-add-two-numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2-add-two-numbers.h"; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,12 +117,21 @@
 			path = BigNumber;
 			sourceTree = "<group>";
 		};
+		7398A66A2156624E005351D7 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				7398A66B215662E3005351D7 /* 2-add-two-numbers.h */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
 		73C0AF89214E21F70096AB22 = {
 			isa = PBXGroup;
 			children = (
+				7398A66A2156624E005351D7 /* LeetCode */,
+				73C0AF95214E21F70096AB22 /* main.cpp */,
 				735A7A46214FECD6001E5761 /* Utility */,
 				735A7A43214FEC9C001E5761 /* Algorithm */,
-				73C0AF94214E21F70096AB22 /* CppToySolution */,
 				73C0AF93214E21F70096AB22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,14 +142,6 @@
 				73C0AF92214E21F70096AB22 /* CppToySolution */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		73C0AF94214E21F70096AB22 /* CppToySolution */ = {
-			isa = PBXGroup;
-			children = (
-				73C0AF95214E21F70096AB22 /* main.cpp */,
-			);
-			path = CppToySolution;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
