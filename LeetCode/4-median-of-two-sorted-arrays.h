@@ -8,7 +8,43 @@
 
 #ifndef __median_of_two_sorted_arrays_h
 #define __median_of_two_sorted_arrays_h
+// 1. O(log(max(n,m))) solution
 class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        vector<int>& vecA = nums1.size() < nums2.size() ? nums1 : nums2;
+        vector<int>& vecB = nums1.size() < nums2.size() ? nums2 : nums1;
+        int lenA = vecA.size(), lenB = vecB.size();
+        int leftNumber = (lenA+lenB+1) / 2;
+        
+        double ans = 0;
+        int l = 0, r = lenA;
+        while(l <= r)
+        {
+            int posA = (l+r) / 2; // [0, lenA]
+            int posB = leftNumber - posA; // [0, lenB]
+            if(posA < lenA && posB-1 >= 0 && vecA[posA] < vecB[posB-1]) l = posA+1;
+            else if(posB < lenB && posA-1 >= 0 && vecB[posB] < vecA[posA-1]) r = posA-1;
+            else
+            {
+                if(posA-1 >= 0 &&  (posB-1 < 0 || vecA[posA-1] > vecB[posB-1])) ans += vecA[posA-1];
+                else ans += vecB[posB-1];
+                
+                if((lenA+lenB) % 2 == 0)
+                {
+                    if(posA < lenA && ( posB == lenB || vecA[posA] < vecB[posB])) ans += vecA[posA];
+                    else ans += vecB[posB];
+                    ans /= 2;
+                }
+                break;
+            }
+        }
+        return ans;
+    }
+};
+
+// 2. O(n) solution
+class Solution2 {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int len1 = nums1.size(), len2 = nums2.size();
