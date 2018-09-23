@@ -16,15 +16,9 @@ public:
             if(ind2 < static_cast<long long>(v2.size())) return true;
             else return false;
         }
-        else if(ind1 < 0) {
-            return false;
-        }
-        else if(ind2 >= static_cast<long long>(v2.size())) {
-            return false;
-        }
-        else if(ind2 < 0) {
-            return true;
-        }
+        else if(ind1 < 0) return false;
+        else if(ind2 >= static_cast<long long>(v2.size())) return false;
+        else if(ind2 < 0) return true;
         else return v1[ind1] > v2[ind2];
     }
     

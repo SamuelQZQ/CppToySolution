@@ -7,12 +7,12 @@
 //
 
 #include <iostream>
-#include "MatrixTest.hpp"
+#include "5-longest-palindromic-substring.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    Test();
+    
     return 0;
 }
