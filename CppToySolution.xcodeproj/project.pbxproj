@@ -41,6 +41,7 @@
 		7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4-median-of-two-sorted-arrays.h"; sourceTree = "<group>"; };
 		7398A66E21571B23005351D7 /* 5-longest-palindromic-substring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "5-longest-palindromic-substring.h"; sourceTree = "<group>"; };
 		7398A66F21574694005351D7 /* 10-regular-expression-matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "10-regular-expression-matching.h"; sourceTree = "<group>"; };
+		739993AF215A760F00C7C8EB /* 17-letter-combinations-of-a-phone-number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "17-letter-combinations-of-a-phone-number.h"; sourceTree = "<group>"; };
 		73C0AF92214E21F70096AB22 /* CppToySolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppToySolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73C2170B21576FCE002BD38B /* 11-container-with-most-water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "11-container-with-most-water.h"; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 				7398A66F21574694005351D7 /* 10-regular-expression-matching.h */,
 				73C2170B21576FCE002BD38B /* 11-container-with-most-water.h */,
 				73C2170C215900D9002BD38B /* 15-3sum.h */,
+				739993AF215A760F00C7C8EB /* 17-letter-combinations-of-a-phone-number.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
