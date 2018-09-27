@@ -23,6 +23,7 @@ class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode *p = NULL, *q = NULL, *prevp = NULL;
+//        ListNode *p, *q, *prevp;  因为没有初始化导致严重错误！
         q = p = head;
         
         for(int i = 0; i < n-1; ++i) q = q->next;
