@@ -48,6 +48,7 @@
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73C2170B21576FCE002BD38B /* 11-container-with-most-water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "11-container-with-most-water.h"; sourceTree = "<group>"; };
 		73C2170C215900D9002BD38B /* 15-3sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "15-3sum.h"; sourceTree = "<group>"; };
+		73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "146-lru-cache.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 				739993AF215A760F00C7C8EB /* 17-letter-combinations-of-a-phone-number.h */,
 				73BD7B59215BBDA300F9E3BB /* 19-remove-nth-node-from-end-of-list.h */,
 				7371339C215D0060007D48EF /* 20-valid-parentheses.h */,
+				73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
