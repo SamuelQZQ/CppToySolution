@@ -8,27 +8,13 @@
 
 #include <iostream>
 #include <vector>
-#include "146-lru-cache.h"
+#include "21-merge-two-sorted-lists.h"
 using namespace std;
 
 
 
 int main(int argc, const char * argv[]) {
-    LRUCache lru(3);
-    lru.put(1,1);
-    lru.put(2,2);
-    lru.put(3,3);
-    lru.put(4,4);
-    cout<<lru.get(4)<<endl;
-    cout<<lru.get(3)<<endl;
-    cout<<lru.get(2)<<endl;
-    cout<<lru.get(1)<<endl;
-    lru.put(5,5);
-    cout<<lru.get(5)<<endl;
-    cout<<lru.get(4)<<endl;
-    cout<<lru.get(3)<<endl;
-    cout<<lru.get(2)<<endl;
-    cout<<lru.get(1)<<endl;
-    
+    Solution s;
+    s.mergeTwoLists(<#ListNode *l1#>, <#ListNode *l2#>)
     return 0;
 }

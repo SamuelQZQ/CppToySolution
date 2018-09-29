@@ -37,6 +37,7 @@
 		73732855214E2BD300EB7521 /* SortTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortTest.hpp; sourceTree = "<group>"; };
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
+		73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "21-merge-two-sorted-lists.h"; sourceTree = "<group>"; };
 		7398A66B215662E3005351D7 /* 2-add-two-numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2-add-two-numbers.h"; sourceTree = "<group>"; };
 		7398A66C21566E6A005351D7 /* 3-longest-substring-without-repeating-characters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3-longest-substring-without-repeating-characters.h"; sourceTree = "<group>"; };
 		7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4-median-of-two-sorted-arrays.h"; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				73BD7B59215BBDA300F9E3BB /* 19-remove-nth-node-from-end-of-list.h */,
 				7371339C215D0060007D48EF /* 20-valid-parentheses.h */,
 				73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */,
+				73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
