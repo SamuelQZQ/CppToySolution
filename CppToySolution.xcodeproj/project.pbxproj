@@ -28,6 +28,7 @@
 		73106FBC215291C40027906C /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		73106FBE2152A6AE0027906C /* MatrixTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MatrixTest.hpp; sourceTree = "<group>"; };
 		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
+		7369BCF82160F6D10015418B /* 22-generate-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "22-generate-parentheses.h"; sourceTree = "<group>"; };
 		7371339C215D0060007D48EF /* 20-valid-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "20-valid-parentheses.h"; sourceTree = "<group>"; };
 		7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTree.hpp; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 				7371339C215D0060007D48EF /* 20-valid-parentheses.h */,
 				73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */,
 				73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */,
+				7369BCF82160F6D10015418B /* 22-generate-parentheses.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
