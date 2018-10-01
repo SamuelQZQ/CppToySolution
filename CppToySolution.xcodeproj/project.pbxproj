@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7373284C214E272100EB7521 /* BinaryIndexTree.cpp */; };
 		73732859214F962F00EB7521 /* BigNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73732857214F962F00EB7521 /* BigNumber.cpp */; };
+		738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 738BE95421623CE900B6A93E /* priority_queue.cpp */; };
 		73C0AF96214E21F70096AB22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73C0AF95214E21F70096AB22 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,9 @@
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
 		73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "21-merge-two-sorted-lists.h"; sourceTree = "<group>"; };
+		738BE95421623CE900B6A93E /* priority_queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = priority_queue.cpp; sourceTree = "<group>"; };
+		738BE95521623CE900B6A93E /* priority_queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = priority_queue.hpp; sourceTree = "<group>"; };
+		738BE957216240A100B6A93E /* 23-merge-k-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "23-merge-k-sorted-lists.h"; sourceTree = "<group>"; };
 		7398A66B215662E3005351D7 /* 2-add-two-numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2-add-two-numbers.h"; sourceTree = "<group>"; };
 		7398A66C21566E6A005351D7 /* 3-longest-substring-without-repeating-characters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3-longest-substring-without-repeating-characters.h"; sourceTree = "<group>"; };
 		7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4-median-of-two-sorted-arrays.h"; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		735A7A46214FECD6001E5761 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				738BE95821624B8600B6A93E /* PriorityQueue */,
 				73732856214F961100EB7521 /* BigNumber */,
 				735A7A44214FECBF001E5761 /* Matrix */,
 				735A7A45214FECC9001E5761 /* String */,
@@ -129,6 +134,16 @@
 			path = BigNumber;
 			sourceTree = "<group>";
 		};
+		738BE95821624B8600B6A93E /* PriorityQueue */ = {
+			isa = PBXGroup;
+			children = (
+				738BE95421623CE900B6A93E /* priority_queue.cpp */,
+				738BE95521623CE900B6A93E /* priority_queue.hpp */,
+			);
+			name = PriorityQueue;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7398A66A2156624E005351D7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +160,7 @@
 				73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */,
 				73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */,
 				7369BCF82160F6D10015418B /* 22-generate-parentheses.h */,
+				738BE957216240A100B6A93E /* 23-merge-k-sorted-lists.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -226,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C0AF96214E21F70096AB22 /* main.cpp in Sources */,
+				738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */,
 				73732859214F962F00EB7521 /* BigNumber.cpp in Sources */,
 				7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */,
 			);

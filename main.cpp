@@ -8,13 +8,12 @@
 
 #include <iostream>
 #include <vector>
-#include "21-merge-two-sorted-lists.h"
+#include "priority_queue.hpp"
 using namespace std;
 
 
 
-int main(int argc, const char * argv[]) {
-    Solution s;
-    s.mergeTwoLists(<#ListNode *l1#>, <#ListNode *l2#>)
+int main() {
+    TestPriorityQueue();
     return 0;
 }
