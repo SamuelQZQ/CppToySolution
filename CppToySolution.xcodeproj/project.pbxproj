@@ -44,6 +44,7 @@
 		738BE95421623CE900B6A93E /* priority_queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = priority_queue.cpp; sourceTree = "<group>"; };
 		738BE95521623CE900B6A93E /* priority_queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = priority_queue.hpp; sourceTree = "<group>"; };
 		738BE957216240A100B6A93E /* 23-merge-k-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "23-merge-k-sorted-lists.h"; sourceTree = "<group>"; };
+		738C358A2168A414008C03A9 /* 33-search-in-rotated-sorted-array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "33-search-in-rotated-sorted-array.h"; sourceTree = "<group>"; };
 		7398A66B215662E3005351D7 /* 2-add-two-numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2-add-two-numbers.h"; sourceTree = "<group>"; };
 		7398A66C21566E6A005351D7 /* 3-longest-substring-without-repeating-characters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3-longest-substring-without-repeating-characters.h"; sourceTree = "<group>"; };
 		7398A66D2156732C005351D7 /* 4-median-of-two-sorted-arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4-median-of-two-sorted-arrays.h"; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 				7369BCF82160F6D10015418B /* 22-generate-parentheses.h */,
 				738BE957216240A100B6A93E /* 23-merge-k-sorted-lists.h */,
 				736D8D6021633051001A75D3 /* 32-longest-valid-parentheses.h */,
+				738C358A2168A414008C03A9 /* 33-search-in-rotated-sorted-array.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
