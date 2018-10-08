@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73726085216B526C00126F5A /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73726083216B526C00126F5A /* MemoryPool.cpp */; };
 		7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7373284C214E272100EB7521 /* BinaryIndexTree.cpp */; };
 		73732859214F962F00EB7521 /* BigNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73732857214F962F00EB7521 /* BigNumber.cpp */; };
 		738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 738BE95421623CE900B6A93E /* priority_queue.cpp */; };
@@ -32,6 +33,9 @@
 		7369BCF82160F6D10015418B /* 22-generate-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "22-generate-parentheses.h"; sourceTree = "<group>"; };
 		736D8D6021633051001A75D3 /* 32-longest-valid-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "32-longest-valid-parentheses.h"; sourceTree = "<group>"; };
 		7371339C215D0060007D48EF /* 20-valid-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "20-valid-parentheses.h"; sourceTree = "<group>"; };
+		73726083216B526C00126F5A /* MemoryPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPool.cpp; sourceTree = "<group>"; };
+		73726084216B526C00126F5A /* MemoryPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemoryPool.hpp; sourceTree = "<group>"; };
+		73726086216B6EAA00126F5A /* MemoryPoolTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryPoolTest.h; sourceTree = "<group>"; };
 		7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTree.hpp; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
 		73732850214E29EC00EB7521 /* BinaryIndexTreeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTreeTest.hpp; sourceTree = "<group>"; };
@@ -99,12 +103,23 @@
 		735A7A46214FECD6001E5761 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				7372607F216B4F8400126F5A /* MemoryPool */,
 				738BE95821624B8600B6A93E /* PriorityQueue */,
 				73732856214F961100EB7521 /* BigNumber */,
 				735A7A44214FECBF001E5761 /* Matrix */,
 				735A7A45214FECC9001E5761 /* String */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		7372607F216B4F8400126F5A /* MemoryPool */ = {
+			isa = PBXGroup;
+			children = (
+				73726083216B526C00126F5A /* MemoryPool.cpp */,
+				73726084216B526C00126F5A /* MemoryPool.hpp */,
+				73726086216B6EAA00126F5A /* MemoryPoolTest.h */,
+			);
+			path = MemoryPool;
 			sourceTree = "<group>";
 		};
 		7373284E214E298D00EB7521 /* BinaryIndex */ = {
@@ -247,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73726085216B526C00126F5A /* MemoryPool.cpp in Sources */,
 				73C0AF96214E21F70096AB22 /* main.cpp in Sources */,
 				738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */,
 				73732859214F962F00EB7521 /* BigNumber.cpp in Sources */,
