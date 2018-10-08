@@ -7,13 +7,7 @@
 //
 
 
-#include <vector>
-#include "priority_queue.hpp"
-
-
-#include <iostream>
-#include "MemoryPool.hpp"
-#include "MemoryPoolTest.h"
+#include "ThreadPoolTest.hpp"
 
 int main() {
     Test();

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		73726085216B526C00126F5A /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73726083216B526C00126F5A /* MemoryPool.cpp */; };
+		7372608B216B7F7800126F5A /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73726089216B7F7800126F5A /* ThreadPool.cpp */; };
+		73726091216B805900126F5A /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7372608F216B805900126F5A /* Thread.cpp */; };
 		7373284D214E272100EB7521 /* BinaryIndexTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7373284C214E272100EB7521 /* BinaryIndexTree.cpp */; };
 		73732859214F962F00EB7521 /* BigNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73732857214F962F00EB7521 /* BigNumber.cpp */; };
 		738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 738BE95421623CE900B6A93E /* priority_queue.cpp */; };
@@ -35,7 +37,13 @@
 		7371339C215D0060007D48EF /* 20-valid-parentheses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "20-valid-parentheses.h"; sourceTree = "<group>"; };
 		73726083216B526C00126F5A /* MemoryPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPool.cpp; sourceTree = "<group>"; };
 		73726084216B526C00126F5A /* MemoryPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemoryPool.hpp; sourceTree = "<group>"; };
-		73726086216B6EAA00126F5A /* MemoryPoolTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryPoolTest.h; sourceTree = "<group>"; };
+		73726086216B6EAA00126F5A /* MemoryPoolTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemoryPoolTest.hpp; sourceTree = "<group>"; };
+		73726089216B7F7800126F5A /* ThreadPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadPool.cpp; sourceTree = "<group>"; };
+		7372608A216B7F7800126F5A /* ThreadPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		7372608D216B800100126F5A /* Task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Task.hpp; sourceTree = "<group>"; };
+		7372608F216B805900126F5A /* Thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		73726090216B805900126F5A /* Thread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		73726092216B822800126F5A /* ThreadPoolTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPoolTest.hpp; sourceTree = "<group>"; };
 		7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTree.hpp; sourceTree = "<group>"; };
 		7373284C214E272100EB7521 /* BinaryIndexTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryIndexTree.cpp; sourceTree = "<group>"; };
 		73732850214E29EC00EB7521 /* BinaryIndexTreeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryIndexTreeTest.hpp; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 		735A7A46214FECD6001E5761 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				73726087216B7F5500126F5A /* ThreadPool */,
 				7372607F216B4F8400126F5A /* MemoryPool */,
 				738BE95821624B8600B6A93E /* PriorityQueue */,
 				73732856214F961100EB7521 /* BigNumber */,
@@ -117,9 +126,22 @@
 			children = (
 				73726083216B526C00126F5A /* MemoryPool.cpp */,
 				73726084216B526C00126F5A /* MemoryPool.hpp */,
-				73726086216B6EAA00126F5A /* MemoryPoolTest.h */,
+				73726086216B6EAA00126F5A /* MemoryPoolTest.hpp */,
 			);
 			path = MemoryPool;
+			sourceTree = "<group>";
+		};
+		73726087216B7F5500126F5A /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				73726089216B7F7800126F5A /* ThreadPool.cpp */,
+				7372608A216B7F7800126F5A /* ThreadPool.hpp */,
+				7372608D216B800100126F5A /* Task.hpp */,
+				7372608F216B805900126F5A /* Thread.cpp */,
+				73726090216B805900126F5A /* Thread.hpp */,
+				73726092216B822800126F5A /* ThreadPoolTest.hpp */,
+			);
+			path = ThreadPool;
 			sourceTree = "<group>";
 		};
 		7373284E214E298D00EB7521 /* BinaryIndex */ = {
@@ -263,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73726085216B526C00126F5A /* MemoryPool.cpp in Sources */,
+				7372608B216B7F7800126F5A /* ThreadPool.cpp in Sources */,
+				73726091216B805900126F5A /* Thread.cpp in Sources */,
 				73C0AF96214E21F70096AB22 /* main.cpp in Sources */,
 				738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */,
 				73732859214F962F00EB7521 /* BigNumber.cpp in Sources */,
