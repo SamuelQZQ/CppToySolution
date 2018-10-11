@@ -53,6 +53,7 @@
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
 		73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "21-merge-two-sorted-lists.h"; sourceTree = "<group>"; };
+		73882DE8216F7E2C00EDB681 /* 354-russian-doll-envelopes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "354-russian-doll-envelopes.h"; sourceTree = "<group>"; };
 		738BE95421623CE900B6A93E /* priority_queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = priority_queue.cpp; sourceTree = "<group>"; };
 		738BE95521623CE900B6A93E /* priority_queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = priority_queue.hpp; sourceTree = "<group>"; };
 		738BE957216240A100B6A93E /* 23-merge-k-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "23-merge-k-sorted-lists.h"; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 		735A7A43214FEC9C001E5761 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				7373284E214E298D00EB7521 /* BinaryIndex */,
+				7373284E214E298D00EB7521 /* BinaryIndexTree */,
 				73732851214E2B3900EB7521 /* SortAlgorithm */,
 			);
 			path = Algorithm;
@@ -145,14 +146,14 @@
 			path = ThreadPool;
 			sourceTree = "<group>";
 		};
-		7373284E214E298D00EB7521 /* BinaryIndex */ = {
+		7373284E214E298D00EB7521 /* BinaryIndexTree */ = {
 			isa = PBXGroup;
 			children = (
 				7373284C214E272100EB7521 /* BinaryIndexTree.cpp */,
 				7373284B214E26E500EB7521 /* BinaryIndexTree.hpp */,
 				73732850214E29EC00EB7521 /* BinaryIndexTreeTest.hpp */,
 			);
-			path = BinaryIndex;
+			path = BinaryIndexTree;
 			sourceTree = "<group>";
 		};
 		73732851214E2B3900EB7521 /* SortAlgorithm */ = {
@@ -206,6 +207,7 @@
 				738C358A2168A414008C03A9 /* 33-search-in-rotated-sorted-array.h */,
 				738C358B2168A82C008C03A9 /* 34-find-first-and-last-position-of-element-in-sorted-array.h */,
 				739D89F7216E1E9000DDAEBF /* 42-trapping-rain-water.h */,
+				73882DE8216F7E2C00EDB681 /* 354-russian-doll-envelopes.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
