@@ -72,6 +72,7 @@
 		73C2170B21576FCE002BD38B /* 11-container-with-most-water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "11-container-with-most-water.h"; sourceTree = "<group>"; };
 		73C2170C215900D9002BD38B /* 15-3sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "15-3sum.h"; sourceTree = "<group>"; };
 		73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "146-lru-cache.h"; sourceTree = "<group>"; };
+		73FE688A2171EC2D00071E97 /* 46-permutations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "46-permutations.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +209,7 @@
 				738C358B2168A82C008C03A9 /* 34-find-first-and-last-position-of-element-in-sorted-array.h */,
 				739D89F7216E1E9000DDAEBF /* 42-trapping-rain-water.h */,
 				73882DE8216F7E2C00EDB681 /* 354-russian-doll-envelopes.h */,
+				73FE688A2171EC2D00071E97 /* 46-permutations.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
