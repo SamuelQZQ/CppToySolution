@@ -71,6 +71,8 @@
 		73C0AF95214E21F70096AB22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73C2170B21576FCE002BD38B /* 11-container-with-most-water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "11-container-with-most-water.h"; sourceTree = "<group>"; };
 		73C2170C215900D9002BD38B /* 15-3sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "15-3sum.h"; sourceTree = "<group>"; };
+		73D412262172F61D0025BDF2 /* 48-rotate-image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "48-rotate-image.h"; sourceTree = "<group>"; };
+		73D4122921738FAE0025BDF2 /* ObjectPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectPool.hpp; sourceTree = "<group>"; };
 		73DBADB0215E57A800E0C2AB /* 146-lru-cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "146-lru-cache.h"; sourceTree = "<group>"; };
 		73FE688A2171EC2D00071E97 /* 46-permutations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "46-permutations.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		735A7A46214FECD6001E5761 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				73D4122721738F9B0025BDF2 /* ObjectPool */,
 				73726087216B7F5500126F5A /* ThreadPool */,
 				7372607F216B4F8400126F5A /* MemoryPool */,
 				738BE95821624B8600B6A93E /* PriorityQueue */,
@@ -210,6 +213,7 @@
 				739D89F7216E1E9000DDAEBF /* 42-trapping-rain-water.h */,
 				73882DE8216F7E2C00EDB681 /* 354-russian-doll-envelopes.h */,
 				73FE688A2171EC2D00071E97 /* 46-permutations.h */,
+				73D412262172F61D0025BDF2 /* 48-rotate-image.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -231,6 +235,14 @@
 				73C0AF92214E21F70096AB22 /* CppToySolution */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		73D4122721738F9B0025BDF2 /* ObjectPool */ = {
+			isa = PBXGroup;
+			children = (
+				73D4122921738FAE0025BDF2 /* ObjectPool.hpp */,
+			);
+			path = ObjectPool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

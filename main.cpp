@@ -8,51 +8,53 @@
 
 
 #include <list>
-#include <vector>
+#include <map>
 #include <iostream>
 using namespace std;
-void dfs(list<int> &lis, vector<int> &temp, vector<vector<int> > &ret)
-{
-    if(lis.empty())
-    {
-        ret.push_back(temp);
-        return;
-    }
-    
-    for(auto it = lis.begin(); it != lis.end(); ++it)
-    {
-        int val = *it;
-        temp.push_back(val);
-        
-        auto pos = lis.erase(it);
-        dfs(lis, temp, ret);
-        
-        temp.pop_back();
-        lis.insert(pos, val);
-    }
-}
+int MOD = 987654321;
 
-vector<vector<int>> permute(vector<int>& nums) {
-    list<int> lis;
-    for(auto it = nums.begin(); it != nums.end(); ++it) {
-        lis.push_back(*it);
-    }
-    
-    vector<vector<int> > ret;
-    vector<int> temp;
-    dfs(lis, temp, ret);
-    return ret;
-}
-
+map<int, int> dp[2];
+int mp[13][13];
 int main() {
-    vector<int> a{1,2,3};
-    auto ret = permute(a);
-    for(auto p: ret)
-    {
-        for(auto q: p)
+    int n, m;
+    cin>> n >> m;
+    for(int i = 0; i < n; ++i)
+        for(int j = 0; j < m; ++j)
+            cin>>mp[i][j];
+    
+    int now = 0, nxt = 1;
+    dp[now][0] = 1;
+    for(int i = 0; i < n; ++i)
+        for(int j = 0; j < m; ++j)
         {
-            cout<<q<<endl;
+            
+            nxt = now ^ 1;
+            dp[nxt].clear();
+            
+            for(auto it = dp[now].begin(); it != dp[now].end(); ++it)
+            {
+                int orig = it->first;
+                int basic = (it->first) & (~(1 << j));
+                
+                int mask = basic;
+                if(dp[nxt].find(mask) == dp[nxt].end()) dp[nxt][mask] = 0;
+                dp[nxt][mask] = (dp[nxt][mask] + it->second) %MOD;
+                
+                if(mp[i][j]) //
+                {
+                    if(orig & (1 << j)) continue;
+                    if(j-1 >= 0 && (orig & (1 << j-1))) continue;
+                    mask = basic | (1<<j);
+                    if(dp[nxt].find(mask) == dp[nxt].end()) dp[nxt][mask] = 0;
+                    dp[nxt][mask] = (dp[nxt][mask] + it->second) %MOD;
+                }
+            }
+            
+            now ^= 1;
         }
-    }
+    
+    int ans = 0;
+    for(auto it = dp[now].begin(); it != dp[now].end(); it ++) ans = (ans + it->second) %MOD;
+    cout<<ans<<endl;
     return 0;
 }
