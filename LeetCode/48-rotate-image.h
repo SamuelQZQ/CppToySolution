@@ -11,7 +11,15 @@
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
-        
+        // x = j
+        // y = lenY - 1 - j
+        vector<vector<int>> temp = matrix;
+        int lenX = matrix.size(), lenY = matrix[0].size();
+        for(int i = 0; i < lenX; ++i)
+        {
+            for(int j = 0; j < lenY; ++j)
+                matrix[j][lenY-1-i] = temp[i][j];
+        }
     }
 };
 
