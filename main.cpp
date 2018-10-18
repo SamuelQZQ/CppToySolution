@@ -38,6 +38,7 @@ public:
         int maxx = max(l.maxx, r.maxx);
         if(l.right + r.left > maxx) maxx = l.right + r.left;
         
+        nums.back();
         cout<<s<<','<<len<<','<<left<<','<<right<<','<<maxx<<','<<sum<<endl;
         return node(left, right, maxx, sum);
         
