@@ -1,18 +1,14 @@
-//
-//  main.cpp
+// https://leetcode.com/problems/maximum-subarray/description/
+//  maximum-subarray.h
 //  CppToySolution
 //
-//  Created by QZQ on 16/09/2018.
+//  Created by QZQ on 18/10/2018.
 //  Copyright © 2018 QZQ. All rights reserved.
 //
 
-
-#include <list>
-#include <map>
-#include <iostream>
-#include <vector>
-using namespace std;
-
+#ifndef maximum_subarray_h
+#define maximum_subarray_h
+// try coding another solution using the divide and conquer approach, which is more subtle
 class Solution {
 public:
     struct node {
@@ -28,19 +24,16 @@ public:
         node r = calc(nums, s+midLen, len-midLen);
         
         int left = l.left;
-        if(l.left == l.sum && r.left > 0) left += r.left;
+        if(l.sum + r.left > left) left = l.sum + r.left;
         
         int right = r.right;
-        if(r.right == r.sum && l.right > 0) right += l.right;
+        if(l.right + r.sum > right) right = l.right + r.sum;
         
         int sum = l.sum + r.sum;
         
         int maxx = max(l.maxx, r.maxx);
         if(l.right + r.left > maxx) maxx = l.right + r.left;
-        
-        cout<<s<<','<<len<<','<<left<<','<<right<<','<<maxx<<','<<sum<<endl;
         return node(left, right, maxx, sum);
-        
     }
     
     int maxSubArray(vector<int>& nums) {
@@ -49,10 +42,23 @@ public:
     }
 };
 
-int main()
-{
-    Solution s;
-    vector<int> a{1,2,-1,-2,2,1,-2,1,4,-5,4};
-    cout<<s.maxSubArray(a)<<endl;
-    return 0;
-}
+class Solution2 {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int ans = nums[0];
+        
+        int len = nums.size();
+        int sum = 0;
+        for(int i = 0; i < len; ++i)
+        {
+            sum += nums[i];
+            if(sum > ans) ans = sum;
+            if(sum < 0) sum = 0;
+        }
+        return ans;
+    }
+};
+
+
+
+#endif /* maximum_subarray_h */
