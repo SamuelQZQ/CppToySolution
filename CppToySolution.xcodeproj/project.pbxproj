@@ -33,6 +33,7 @@
 		73106FBE2152A6AE0027906C /* MatrixTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MatrixTest.hpp; sourceTree = "<group>"; };
 		733A7219217A1466008700D5 /* 62-unique-paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "62-unique-paths.h"; sourceTree = "<group>"; };
 		733A721A217A19C7008700D5 /* 64-minimum-path-sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "64-minimum-path-sum.h"; sourceTree = "<group>"; };
+		733A721B217A1F00008700D5 /* 72-edit-distance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "72-edit-distance.h"; sourceTree = "<group>"; };
 		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
 		7367DA712178ABB500552831 /* 49-group-anagrams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "49-group-anagrams.h"; sourceTree = "<group>"; };
 		7367DA722178BA3100552831 /* 53-maximum-subarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "53-maximum-subarray.h"; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 				7367DA742178CB5000552831 /* 56-merge-intervals.h */,
 				733A7219217A1466008700D5 /* 62-unique-paths.h */,
 				733A721A217A19C7008700D5 /* 64-minimum-path-sum.h */,
+				733A721B217A1F00008700D5 /* 72-edit-distance.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
