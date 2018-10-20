@@ -13,47 +13,48 @@
 #include <vector>
 using namespace std;
 
+
+// 2. one dfs but other memory usage
+struct TreeNode {
+        int val;
+        TreeNode *left;
+        TreeNode *right;
+        TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+    };
 class Solution {
 public:
-    struct node {
-        node(int left, int right, int maxx, int sum):left(left), right(right), maxx(maxx), sum(sum) {}
-        int left, right, maxx, sum;
+    struct Node
+    {
+        int depth;
+        TreeNode* parent;
+        Node(int d, TreeNode* p): depth(d), parent(p) {}
+        Node() {}
     };
     
-    node calc(vector<int>& nums, int s, int len) {
-        if(len == 1) return node(nums[s], nums[s], nums[s], nums[s]);
+    void dfs(map<TreeNode*, Node> &nodes, TreeNode *root, int depth, TreeNode *parent)
+    {
+        Node node(depth, parent);
+        nodes[root] = node;
         
-        int midLen = len/2;
-        node l = calc(nums, s, midLen);
-        node r = calc(nums, s+midLen, len-midLen);
-        
-        int left = l.left;
-        if(l.left == l.sum && r.left > 0) left += r.left;
-        
-        int right = r.right;
-        if(r.right == r.sum && l.right > 0) right += l.right;
-        
-        int sum = l.sum + r.sum;
-        
-        int maxx = max(l.maxx, r.maxx);
-        if(l.right + r.left > maxx) maxx = l.right + r.left;
-        
-        nums.back();
-        cout<<s<<','<<len<<','<<left<<','<<right<<','<<maxx<<','<<sum<<endl;
-        return node(left, right, maxx, sum);
-        
+        if(root->left) dfs(nodes, root->left, depth+1, root);
+        if(root->right) dfs(nodes, root->right, depth+1, root);
     }
     
-    int maxSubArray(vector<int>& nums) {
-        node temp = calc(nums, 0, nums.size());
-        return temp.maxx;
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        map<TreeNode*, Node> nodes;
+        dfs(nodes, root, 0, NULL);
+        
+        while(p != q)
+        {
+            if(nodes[p].depth < nodes[q].depth) q = nodes[q].parent;
+            else p = nodes[p].parent;
+        }
+        return p;
     }
 };
 
+
 int main()
 {
-    Solution s;
-    vector<int> a{1,2,-1,-2,2,1,-2,1,4,-5,4};
-    cout<<s.maxSubArray(a)<<endl;
     return 0;
 }
