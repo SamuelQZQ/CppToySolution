@@ -42,7 +42,7 @@ public:
         Node(){}
     };
     
-    void dfs(map<TreeNode*, Node> &nodes, TreeNode *root, int depth, TreeNode *parent)
+    void dfs(unordered_map<TreeNode*, Node> &nodes, TreeNode *root, int depth, TreeNode *parent)
     {
         Node node(depth, parent);
         nodes[root] = node;
@@ -52,7 +52,7 @@ public:
     }
     
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        map<TreeNode*, Node> nodes;
+        unordered_map<TreeNode*, Node> nodes;
         dfs(nodes, root, 0, NULL);
         
         while(p != q)
