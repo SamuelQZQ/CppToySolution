@@ -14,12 +14,28 @@
 #include <string>
 using namespace std;
 
-#include "Base64Test.h"
+#include "QuickSort.hpp"
 
 
 int main()
 {
-    Test();
+    ListNode *all = new ListNode[10];
     
-    return 0;
+    for(int i = 1; i < 10; ++i)
+    {
+        all[i].val = i * 10086 % 23;
+        cout<<all[i].val<<endl;
+        all[i-1].next = all+i;
+    }
+    
+    cout<<"***"<<endl;
+    QuickSort(all, NULL);
+    
+    ListNode *p = all;
+    while(p != NULL)
+    {
+        cout<<p->val<<endl;
+        p = p->next;
+    }
+    
 }
