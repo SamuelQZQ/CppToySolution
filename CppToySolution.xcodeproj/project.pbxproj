@@ -51,6 +51,7 @@
 		733A722E217C5F2E008700D5 /* 82-remove-duplicates-from-sorted-list-ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "82-remove-duplicates-from-sorted-list-ii.h"; sourceTree = "<group>"; };
 		733A722F217C6076008700D5 /* 83-remove-duplicates-from-sorted-list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "83-remove-duplicates-from-sorted-list.h"; sourceTree = "<group>"; };
 		733A7230217CAFC2008700D5 /* 347-top-k-frequent-elements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "347-top-k-frequent-elements.h"; sourceTree = "<group>"; };
+		733A7231217CBC4E008700D5 /* 587-erect-the-fence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "587-erect-the-fence.h"; sourceTree = "<group>"; };
 		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
 		7367DA712178ABB500552831 /* 49-group-anagrams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "49-group-anagrams.h"; sourceTree = "<group>"; };
 		7367DA722178BA3100552831 /* 53-maximum-subarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "53-maximum-subarray.h"; sourceTree = "<group>"; };
@@ -284,6 +285,7 @@
 				733A722E217C5F2E008700D5 /* 82-remove-duplicates-from-sorted-list-ii.h */,
 				733A722F217C6076008700D5 /* 83-remove-duplicates-from-sorted-list.h */,
 				733A7230217CAFC2008700D5 /* 347-top-k-frequent-elements.h */,
+				733A7231217CBC4E008700D5 /* 587-erect-the-fence.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
