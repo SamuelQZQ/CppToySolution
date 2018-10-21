@@ -52,4 +52,13 @@ void TestPriorityQueue()
         cout << q2.top() << endl;
         q2.pop();
     }
+    
+    priority_queue<int, vector<int>, greater<int>> q3;
+    q3.push(3);
+    q3.push(6);
+    q3.push(9);
+    while(!q3.empty()) {
+        cout << q3.top() << endl;
+        q3.pop();
+    }
 }
