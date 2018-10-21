@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		733A7226217B3451008700D5 /* SegmentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 733A7224217B3451008700D5 /* SegmentTree.cpp */; };
+		733A722C217C3963008700D5 /* Base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 733A722A217C3963008700D5 /* Base64.cpp */; };
 		73726085216B526C00126F5A /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73726083216B526C00126F5A /* MemoryPool.cpp */; };
 		7372608B216B7F7800126F5A /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73726089216B7F7800126F5A /* ThreadPool.cpp */; };
 		73726091216B805900126F5A /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7372608F216B805900126F5A /* Thread.cpp */; };
@@ -44,6 +45,9 @@
 		733A7224217B3451008700D5 /* SegmentTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SegmentTree.cpp; sourceTree = "<group>"; };
 		733A7225217B3451008700D5 /* SegmentTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SegmentTree.hpp; sourceTree = "<group>"; };
 		733A7227217B3C19008700D5 /* SegmentTreeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentTreeTest.h; sourceTree = "<group>"; };
+		733A722A217C3963008700D5 /* Base64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Base64.cpp; sourceTree = "<group>"; };
+		733A722B217C3963008700D5 /* Base64.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base64.hpp; sourceTree = "<group>"; };
+		733A722D217C585A008700D5 /* Base64Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64Test.h; sourceTree = "<group>"; };
 		735A7A47214FED12001E5761 /* BigNumberTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumberTest.hpp; sourceTree = "<group>"; };
 		7367DA712178ABB500552831 /* 49-group-anagrams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "49-group-anagrams.h"; sourceTree = "<group>"; };
 		7367DA722178BA3100552831 /* 53-maximum-subarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "53-maximum-subarray.h"; sourceTree = "<group>"; };
@@ -123,6 +127,16 @@
 			path = SegmentTree;
 			sourceTree = "<group>";
 		};
+		733A7229217C393B008700D5 /* Base64Coding */ = {
+			isa = PBXGroup;
+			children = (
+				733A722A217C3963008700D5 /* Base64.cpp */,
+				733A722B217C3963008700D5 /* Base64.hpp */,
+				733A722D217C585A008700D5 /* Base64Test.h */,
+			);
+			path = Base64Coding;
+			sourceTree = "<group>";
+		};
 		735A7A43214FEC9C001E5761 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +166,7 @@
 		735A7A46214FECD6001E5761 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				733A7229217C393B008700D5 /* Base64Coding */,
 				733A721F217B0175008700D5 /* TreeTraversal */,
 				73D4122721738F9B0025BDF2 /* ObjectPool */,
 				73726087216B7F5500126F5A /* ThreadPool */,
@@ -354,6 +369,7 @@
 				73726085216B526C00126F5A /* MemoryPool.cpp in Sources */,
 				7372608B216B7F7800126F5A /* ThreadPool.cpp in Sources */,
 				73726091216B805900126F5A /* Thread.cpp in Sources */,
+				733A722C217C3963008700D5 /* Base64.cpp in Sources */,
 				733A7226217B3451008700D5 /* SegmentTree.cpp in Sources */,
 				73C0AF96214E21F70096AB22 /* main.cpp in Sources */,
 				738BE95621623CE900B6A93E /* priority_queue.cpp in Sources */,

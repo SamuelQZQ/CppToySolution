@@ -11,13 +11,15 @@
 #include <map>
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
+#include "Base64Test.h"
 
-#include "SegmentTreeTest.h"
 
 int main()
 {
     Test();
+    
     return 0;
 }
