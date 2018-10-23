@@ -77,6 +77,7 @@
 		73732855214E2BD300EB7521 /* SortTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortTest.hpp; sourceTree = "<group>"; };
 		73732857214F962F00EB7521 /* BigNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
 		73732858214F962F00EB7521 /* BigNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
+		7373F43A217F5D190096B32A /* 179-largest-number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "179-largest-number.h"; sourceTree = "<group>"; };
 		73776D95215FAE4300548221 /* 21-merge-two-sorted-lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "21-merge-two-sorted-lists.h"; sourceTree = "<group>"; };
 		73882DE8216F7E2C00EDB681 /* 354-russian-doll-envelopes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "354-russian-doll-envelopes.h"; sourceTree = "<group>"; };
 		738BE95421623CE900B6A93E /* priority_queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = priority_queue.cpp; sourceTree = "<group>"; };
@@ -286,6 +287,7 @@
 				733A722F217C6076008700D5 /* 83-remove-duplicates-from-sorted-list.h */,
 				733A7230217CAFC2008700D5 /* 347-top-k-frequent-elements.h */,
 				733A7231217CBC4E008700D5 /* 587-erect-the-fence.h */,
+				7373F43A217F5D190096B32A /* 179-largest-number.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";

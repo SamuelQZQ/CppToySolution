@@ -18,6 +18,10 @@ using namespace std;
 
 int main()
 {
-    TestPriorityQueue();
+    char a[] = "你好";
+    cout<<sizeof(a)<<endl;
+    cout<<a<<endl;
+    cout<<a[0]<<endl;
+    cout<<(int)a[0]<<endl;
     return 0;
 }
