@@ -1,21 +1,13 @@
-//
-//  main.cpp
+// https://leetcode.com/problems/basic-calculator/
+//  224-basic-calculator.h
 //  CppToySolution
 //
-//  Created by QZQ on 16/09/2018.
+//  Created by QZQ on 2018/10/23.
 //  Copyright © 2018 QZQ. All rights reserved.
 //
 
-
-#include <list>
-#include <map>
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-using namespace std;
-
-#include "priority_queue.hpp"
+#ifndef _24_basic_calculator_h
+#define _24_basic_calculator_h
 class Solution {
 public:
     int calculate(string s) {
@@ -55,7 +47,7 @@ public:
                     }
                     operators.pop();
                 }
-                else
+                else if(c == '+' || c == '-')
                 {
                     if(operators.top() == '+' || operators.top() == '-')
                     {
@@ -67,16 +59,12 @@ public:
                     }
                     operators.push(c);
                 }
+                else if(c == '(') operators.push(c);
                 
             }
         }
         return nums.top();
     }
 };
-int main()
-{
-    Solution s;
-    string st = "1+(4+5+2)";
-    s.calculate(st);
-    return 0;
-}
+
+#endif /* _24_basic_calculator_h */
