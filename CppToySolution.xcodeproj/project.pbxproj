@@ -33,7 +33,8 @@
 /* Begin PBXFileReference section */
 		73106FBC215291C40027906C /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		73106FBE2152A6AE0027906C /* MatrixTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MatrixTest.hpp; sourceTree = "<group>"; };
-		732D47C821947142003A9D1A /* Mutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mutable.h; sourceTree = "<group>"; };
+		732D47C821947142003A9D1A /* mutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mutable.h; sourceTree = "<group>"; };
+		732D47C92194748F003A9D1A /* const_cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = const_cast.h; sourceTree = "<group>"; };
 		733A7219217A1466008700D5 /* 62-unique-paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "62-unique-paths.h"; sourceTree = "<group>"; };
 		733A721A217A19C7008700D5 /* 64-minimum-path-sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "64-minimum-path-sum.h"; sourceTree = "<group>"; };
 		733A721B217A1F00008700D5 /* 72-edit-distance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "72-edit-distance.h"; sourceTree = "<group>"; };
@@ -119,7 +120,8 @@
 		732D47C721946F81003A9D1A /* Grammar */ = {
 			isa = PBXGroup;
 			children = (
-				732D47C821947142003A9D1A /* Mutable.h */,
+				732D47C821947142003A9D1A /* mutable.h */,
+				732D47C92194748F003A9D1A /* const_cast.h */,
 			);
 			path = Grammar;
 			sourceTree = "<group>";
